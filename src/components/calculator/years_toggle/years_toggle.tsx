@@ -9,6 +9,7 @@ const StyledYearsBox = styled(Box)`
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	padding-bottom: 16px;
 `;
 
 const YearsToggleComponent = () => {
