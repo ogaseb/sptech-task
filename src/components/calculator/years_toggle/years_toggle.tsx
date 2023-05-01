@@ -26,17 +26,16 @@ const YearsToggleComponent = () => {
 		const newArray = newYears.map((year) => {
 			//check if year is in arrayCopy and apply its values
 			const index = arrayCopy.findIndex((item) => item.year === year);
-			if (index !== -1) {
-				return arrayCopy[index];
-			} else {
-				return {
-					year: year,
-					internet: false,
-					tv: false,
-					tel: false,
-					decoder: false,
-				};
-			}
+
+			return index !== -1
+				? arrayCopy[index]
+				: {
+						year: year,
+						internet: false,
+						tv: false,
+						tel: false,
+						decoder: false,
+				  };
 		});
 
 		dispatch(setSelectedYears(newYears));

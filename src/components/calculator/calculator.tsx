@@ -5,7 +5,7 @@ import { calculateCost } from '@utils/calculate_cost';
 import { useMemo } from 'react';
 import { YearsToggleComponent } from '@components/calculator/years_toggle/years_toggle';
 import { mediaQuery } from '@theme/theme';
-import { ServicesListForSelectedYears } from './services_list_fol_selected_years/services_list_fol_selected_years';
+import { ServicesListForSelectedYears } from './services_list_for_selected_years/services_list_for_selected_years';
 
 const CalculatorWrapper = styled.div`
 	&& {
