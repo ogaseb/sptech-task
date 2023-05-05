@@ -2,9 +2,9 @@ import { configureStore } from '@reduxjs/toolkit';
 import calculatorStore from '@stores/calculator_store/calculator_store';
 
 export const appStore = configureStore({
-	reducer: {
-		calculatorStore: calculatorStore,
-	},
+  reducer: {
+    calculatorStore: calculatorStore,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

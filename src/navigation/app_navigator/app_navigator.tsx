@@ -3,16 +3,16 @@ import { RootPage } from '@pages/root_page/root_page';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <RootPage />,
-		children: [
-			{
-				path: '/',
-				element: <CalculatorPage />,
-			},
-		],
-	},
+  {
+    path: '/',
+    element: <RootPage />,
+    children: [
+      {
+        path: '/',
+        element: <CalculatorPage />,
+      },
+    ],
+  },
 ]);
 
 export { router };
